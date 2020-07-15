@@ -62,7 +62,7 @@ class TestCase extends PHPUnitTestCase
         return $mock;
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->tmpDir = sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'react-filesystem-tests' . DIRECTORY_SEPARATOR . uniqid('', true) . DIRECTORY_SEPARATOR;
         mkdir($this->tmpDir, 0777, true);
@@ -84,7 +84,7 @@ class TestCase extends PHPUnitTestCase
         });
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->rmdir($this->tmpDir);
     }

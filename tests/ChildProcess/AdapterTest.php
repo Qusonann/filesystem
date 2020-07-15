@@ -13,7 +13,7 @@ use WyriHaximus\React\ChildProcess\Messenger\Messages\Payload;
 
 class AdapterTest extends TestCase
 {
-    public function tearDown()
+    public function tearDown(): void
     {
         SingletonPoolStub::reset();
     }
