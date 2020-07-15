@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e62c1300f56e91689f9403b5f8e81a38",
+    "content-hash": "ce7fbdc428e23ba98fcb692134859a5d",
     "packages": [
         {
             "name": "cakephp/core",
@@ -245,23 +245,24 @@
         },
         {
             "name": "evenement/evenement",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/igorw/evenement.git",
-                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7"
+                "url": "https://github.com/Qusonann/evenement.git",
+                "reference": "3cf8986c9bf1fee11e29919ddcb7c0e5b753b326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/igorw/evenement/zipball/531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
-                "reference": "531bfb9d15f8aa57454f5f0285b18bec903b8fb7",
+                "url": "https://api.github.com/repos/Qusonann/evenement/zipball/3cf8986c9bf1fee11e29919ddcb7c0e5b753b326",
+                "reference": "3cf8986c9bf1fee11e29919ddcb7c0e5b753b326",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0"
+                "ext-json": "*",
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.0"
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "autoload": {
@@ -269,7 +270,14 @@
                     "Evenement": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-0": {
+                    "Evenement": "tests"
+                },
+                "files": [
+                    "tests/Evenement/Tests/functions.php"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -284,7 +292,10 @@
                 "event-dispatcher",
                 "event-emitter"
             ],
-            "time": "2017-07-23T21:35:13+00:00"
+            "support": {
+                "source": "https://github.com/Qusonann/evenement/tree/master"
+            },
+            "time": "2020-07-15T14:11:57+00:00"
         },
         {
             "name": "indigophp/hash-compat",
